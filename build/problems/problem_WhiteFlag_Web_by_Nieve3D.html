@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>White Flag</title>
+</head>
+
+<body onmouseover="gfg_Run()">
+    hint: not for u.
+    <p style="color:#FFFFFF; position: absolute; bottom: 0" ;>ISAG{€0|\|GR4T|_|L4T¡0|\|$-U_R_LuCkY}</p>
+
+    <script>
+        document.onkeypress = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                return false;
+            }
+        }
+        document.onkeydown = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                return false;
+            }
+        }
+
+        function gfg_Run() {
+            document.addEventListener('contextmenu', event => event.preventDefault());
+        }  
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <style>
+        body {
+            background: snow; 
+            height: 90vh;
+            transition: background 10s;
+        }
+
+        .header:hover {
+            cursor: pointer;
+            color: lightslategrey;
+        }
+
+        .header:active {
+            color: red;
+        }
+
+        .button {
+            background: snow;
+            width: 30px;
+            height: 500px;
+            color: white;
+            outline: none;
+            border: none;
+            user-select: none;
+            position: absolute;
+            bottom: 0;
+            user-select: none;
+        }
+
+        h3 {
+            padding: 0;
+            margin: 0;
+            color: snow;
+        }
+    </style>
+</head>
+
+<body onmouseover="gfg_Run()">
+    <h1 class="header" onmousedown="alert('This is not a button.')">Click button to create cookie!</h1>
+    <h3 style="color: red">*ห้ามดู src</h3>
+    <h3>Button</h3>
+    <h3>&nbsp|</h3>
+    <h3>&nbsp|</h3>
+    <h3>&nbsp|</h3>
+    <h3>V</h3>
+    <button class='button'>button</button> 
+    <script>
+        let btn = document.querySelector('.button');
+        btn.onclick = function () {
+            document.cookie = 'flag=ISAG{€0|\|GR4T|_|L4T¡0|\|$-134$1C_C00|<13$}';
+            alert('cookie created!');
+        }
+
+        function gfg_Run() {
+            document.addEventListener('contextmenu', event => event.preventDefault());
+        }   
+    </script>
+
+    <script>
+        document.onkeypress = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                return false;
+            }
+        }
+        document.onkeydown = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                return false;
+            }
+        }  
+    </script>
+</body> 
+
+</html>

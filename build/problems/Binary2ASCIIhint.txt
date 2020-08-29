@@ -1,0 +1,1 @@
+replace _ with 0 and . with 1
